@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Zadanie dotyczące rektutacji w Gdańskim Wydawnictwie Oświatowym">
+		<meta name="keywords" content="GWO, Gdańskie Wydawnictwo Oświatowe">
+		<meta name="author" content="Marlena Naczk">
+		<title>GWO - Strona główna</title>	
+		<link rel="stylesheet" type="text/css" href="/less/grid/simple-grid.min.css" /> 
+		<link rel="stylesheet/less" type="text/css" href="/less/style.less" /> 
+		<script>
+  less = {
+    env: "development"
+  };
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+</head>
+<body>
+<header> 
+		<div class="row">
+			<logo class="col-4">
+				<a href="/"><img src="/images/t10.svg" /></a>			
+			</logo>
+			<div class="col-8 header-nav right">
+				<ul>
+					<li><a href="?page=wpiszkod" title="Wpisz kod">Wpisz kod</a></li>
+					<li><a href="?page=mojedostepy" title="Moje dostępy">Moje dostępy</a></li>
+					<li><a href="?page=koszyk" title="Koszyk"><img src="/images/basket.png" /> Koszyk</a></li>
+				</ul>
+				<user>
+					<p>{{ user.name }} {{ user.surname }}</p>
+					<a href="{{ application.demoUrl }}" title="Wyloguj">(wyloguj)</a>
+				</user>
+			</div>
+		</div> 
+</header>
+<main>
+	<section id="slider">
+		<figure><img src="/images/t12.svg" /></figure>
+	</section>
+	<nav>  
+			<div class="row">
+				<div class="col-12">
+					<ul>
+						<li><a href="/" title="Strona główna"><img src="/images/home.png" /> </a></li>
+						<li><a href="?page=oprogramie" title="O programie">O programie</a></li>
+						<li><a href="?page=zobaczprogram" title="Zobacz program">Zobacz program</a></li>
+						<li><a href="?page=oferta" title="Oferta">Oferta</a></li>
+						<li><a href="?page=naszeprogramy" title="Nasze programy">Nasze programy</a></li>
+					</ul>
+				</div>
+			</div> 
+		 
+	<div class="triangle"></div>
+</nav>
+<section id="matlandia">
+			<div class="container">
+				<div class="row">
+					<div class="col-9 justify">
+						<h2><i>Matlandia Junior</i></h2>
+						<p><b>100 animowanych zadań z matematyki dla dzieci w wieku 5-9 lat</b></p>
+						<p>Jaki szyfr otwiera szkrzynię ze skarbami? Ile waży jajo strusia? Co można kupić za 5 złotych? Matematyka towarzyszy dzieciom na każdym koku, a z <i>Matlandią Junior</i> liczenie staje się wciągającą zabawą! Program ćwiczy pamięć, rozwija wyobraźnię geometryczną oraz umiejętność logicznego myślenia. Do rozwiązania zadań zachęcają komentarze sympatycznych bohaterów oram medale za osiągnięcia.</p>
+						<p><b><i>Matlandia Junior</i> to młodsza siostra <i>Matlandii</i> dla klas 4-6, która od wielu lat cieszy się 
+ogromną popularnością w szkołach całej Polski (od 2010 r. z <i>Matlandii</i> skorzystało ponad 6000 nauczycieli oraz 200 000 
+uczniów).</b></p><br>
+						<p><b>Program będzie dostępny od września 2015 roku.</b></p>
+									
+					</div>
+					<div class="col-3">
+						<img src="/images/t11.svg" class="crocodile" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="zalety-programu">				
+			<div class="container">
+				<div class="row">
+					<div class="col-12 center">
+						<h2>Zalety programu</h2>
+					</div>
+					{% for item in zaletyProgramu %}
+						<article class="col-4 center">
+							<img src="{{ item.image }}" />
+							<h4>{{ item.name }}</h4>
+						</article>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="triangle2"></div>
+		</section>
+		<div id="ribbon">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h3>Pobierz pełną listę działów i tematów</h3><img src="/images/t13.svg" />
+					
+				</div>
+			</div>
+		</div>
+		</div>
+		<section id="zobacz-program">
+			
+			<div class="row">
+				<div class="col-12 center"> 
+					<h2>Zobacz program</h2>
+				</div>
+				<div class="col-4">
+					<img src="/images/program.png" />
+				</div>
+				<div class="col-4">
+					<img src="/images/program.png" />
+				</div>
+				<div class="col-4">
+					<img src="/images/program.png" />
+				</div>
+				<div class="col-4">
+					<img src="/images/program.png" />
+				</div>
+				<div class="col-4">
+					<img src="/images/program.png" />
+				</div>
+				<div class="col-4">
+					<img src="/images/program.png" />
+				</div>
+			</div>
+			<div class="container">
+			<div class="row">
+				<div class="col-6 wersja_probna_img">
+					<img src="/images/wersja_probna.png" />
+				</div>
+				<div class="col-4 wersja_probna_t">				
+					<h4>Możliwość<br>rozwiązywania xx zadań</h4>
+				</div>
+			</div>
+			</div> 
+		</section>
+		<section id="oferta">
+			<div class="container">
+			<div class="row">
+				<div class="col-12 center"><h2>Oferta</div> 
+				<div class="col-4 center"> 
+					<a href="" title="Oferta dla ucznia"><h4>dla ucznia</h4><img src="/images/t6.png" /></a>
+				</div>
+				<div class="col-4 center">
+					<a href="" title="Oferta dla rodzica"><h4>dla rodzica</h4><img src="/images/t7.png" /> </a>
+				</div>
+				<div class="col-4 center">
+					<a href="" title="Oferta dla nauczyciela"><h4>dla nauczyciela</h4><img src="/images/t5.png" /></a>
+				</div>
+			</div>
+			</div>
+		</section>
+		<section id="nasze-programy">	 
+				<div class="row">
+				<div class="col-12 center">
+					<h2>Nasze programy</h2>
+				</div>
+				{% for item in otherApps %}
+					<div class="col-4">
+						<article>
+							<img src="{{ item.image }}" />
+							<div class="content">
+								<h3><i>{{ item.name }}</i></h3>
+								<h5>{{ item.tags }} </h5>
+								<p>{{ item.description }}</p>
+								<a href="{{ item.showMoreUrl }}" title="Zobacz więcej" class="more"> zobacz więcej <span> > </span> </a>									</a>
+							</div>
+						</article>
+					</div>
+				{% endfor %}
+			</div>			 
+					 
+		</section>
+		
+		</main>
+		<footer> 
+			<div class="row">
+					<div class="col-12">
+					{% for item in menuFooter %}
+					<a href="{{ item.url }}" title="{{ item.name }}" class="footer_icon"><img src="{{ item.image }}" />{{ item.name }}</a>
+					{% endfor %}
+				</div>
+				 
+				<div class="col-12">
+				<p>{{ footer.name }} {{ footer.type }} <br>
+				{{ footer.adress }}</p>
+				 
+				<p>Copyright &copy; {{ footer.name }} 2016 </p>
+				</div>
+		 
+			</div>			 
+		</footer>
+	</body>
+</html>

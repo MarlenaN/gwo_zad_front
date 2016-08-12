@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="description" content="Zadanie dotyczące rektutacji w Gdańskim Wydawnictwie Oświatowym">
+		<meta name="keywords" content="GWO, Gdańskie Wydawnictwo Oświatowe">
+		<meta name="author" content="Marlena Naczk">
+		<title>GWO - O programie</title>	
+		<link rel="stylesheet" type="text/css" href="/less/grid/simple-grid.css" /> 
+		<link rel="stylesheet/less" type="text/css" href="/less/style.less" /> 
+		<script>
+  less = {
+    env: "development"
+  };
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+</head>
+<body class="page">
+<header> 
+		<div class="row">
+			<logo class="col-4">
+				<a href="/"><img src="/images/t10.svg" /></a>			
+			</logo>
+			<div class="col-8 header-nav right">
+				<ul>
+					<li><a href="?page=wpiszkod" title="Wpisz kod">Wpisz kod</a></li>
+					<li><a href="?page=mojedostepy" title="Moje dostępy">Moje dostępy</a></li>
+					<li><a href="?page=koszyk" title="Koszyk"><img src="/images/basket.png" /> Koszyk</a></li>
+				</ul>
+				<user>
+					<p>{{ user.name }} {{ user.surname }}</p>
+					<a href="{{ application.demoUrl }}" title="Wyloguj">(wyloguj)</a>
+				</user>
+			</div>
+		</div> 
+</header>
+<main>
+	<section id="slider">
+		<figure><img src="/images/t12.svg" /></figure>
+	</section>
+	<nav>  
+			<div class="row">
+				<div class="col-12">
+					<ul>
+						<li><a href="/" title="Strona główna"><img src="/images/home.png" /> </a></li>
+						<li><a href="?page=oprogramie" title="O programie">O programie</a></li>
+						<li><a href="?page=zobaczprogram" title="Zobacz program">Zobacz program</a></li>
+						<li><a href="?page=oferta" title="Oferta">Oferta</a></li>
+						<li><a href="?page=naszeprogramy" title="Nasze programy">Nasze programy</a></li>
+					</ul>
+				</div>
+			</div> 
+		 
+	<div class="triangle"></div>
+</nav>
+<section>
+		
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1>O programie</h1>
+			</div>
+			<div class="col-12 justify">
+				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+				nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+				esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+				in culpa qui officia deserunt mollit anim id est laborum.</h4>
+			</div>
+		</div>
+	</div>			 
+		</section>
+		
+		</main>
+		<footer> 
+				  
+				<div class="row">
+					<div class="col-12">
+					{% for item in menuFooter %}
+					<a href="{{ item.url }}" title="{{ item.name }}" class="footer_icon"><img src="{{ item.image }}" />{{ item.name }}</a>
+					{% endfor %}
+				</div>
+				 
+				<div class="col-12">
+				<p>{{ footer.name }} {{ footer.type }} <br>
+				{{ footer.adress }}</p>
+				 
+				<p>Copyright &copy; {{ footer.name }} 2016 </p>
+				</div>
+		 
+</div>			 
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,251 @@
+#matlandia { 
+	padding:60px 0;
+	height:auto;
+	h2 {
+		.fat;
+	} 
+	.crocodile { 
+		margin:130px 0 0 -40px !important;
+	}
+}
+#matlandia::after{
+	content: " ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 30px 0 30px;
+	border-color: #fff transparent transparent transparent;
+	position:relative; bottom:-120px; left:47%; z-index:999;
+}
+#zalety-programu{  
+	background:@yellow;
+	padding:80px 0;
+	width:100%; 
+	height:660px;
+	position:reative;
+	word-wrap: break-word;
+	background-image: url("/images/t3.png");
+	background-repeat: repeat-x;
+	background-position:bottom left;
+	.center;
+	color:@white;
+	h2{ 
+		color:@white; 
+		padding:10px 0; 
+	}
+	h4{ 
+		.bold; 
+		color:@white; 
+		padding:10px 15px;
+	}
+	article{
+		height:250px;
+	} 
+}
+#ribbon { 
+	.center;
+	background:@white;
+	padding:60px 0;
+	height:auto;
+	background-image: url("/images/t14.png");
+	background-repeat: no-repeat;
+	background-position:center left 150px;
+	background-attachment:absolute;
+	z-index:999;
+	h3 {
+		color:@white; 
+		font-size:28px; 
+		.bold; 
+		position:absolute; 
+		bottom:15px;
+		left:250px;
+	}
+	img{
+		width:auto; 
+		height:auto; 
+		margin:20px 0 0 0;
+	}
+}
+#ribbon::after{
+	content: " ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 30px 0 30px;
+	border-color: #fff transparent transparent transparent;
+	position:relative; bottom:-120px; left:0%; z-index:999;
+}
+#zobacz-program{
+	padding:60px 0;
+	height:100%;
+	position:relative;
+	background: @blue;
+	img { 
+		width:100%!important; 
+		height:auto;  
+		display: block;
+		vertical-align: top;
+	}
+	h2{
+		font-size:44px!important; 
+		color:@white;
+	}
+	.wersja_probna_img img{
+		padding:20px; 
+		margin:0px 0px 0px 20px;
+	}
+	.wersja_probna_t {  
+		text-align:left; 
+		vertical-align:center; 
+		padding:50px 0 0 0!important;
+		h4{ 
+			color:@white; 
+			clear:left; 
+			text-align:left;
+		}
+	}
+}
+#zobacz-program::after{
+	content: ' ';
+	position:absolute; bottom:-30px; background:transparent;
+	background-image: url("/images/t4.png");
+	background-repeat: repeat-x;
+	background-position:left bottom;
+	z-index:999;
+	width:100%; height:80px;  
+}	
+#oferta{
+	padding:80px 0;
+	backgrund:@white;  
+	background-image: url("/images/t1.png"), url("/images/t1.png"); 
+	background-repeat: repeat, repeat;
+	background-position: top left, top left 100px;	
+    background-size:200px auto, 200px auto;
+	h2 {
+		color:@main;
+	}
+	a {
+		text-decoration:none;
+		position:relative;
+		img{
+			width:90%; 
+			height:auto; 
+			.center;
+		}
+		h4{
+			position:absolute; 
+			color:@white; 
+			padding:12px 0 0 0!important; 
+			bottom:0px; left:0px; 
+			font-size:20px!important; 
+			width:100%;
+		}
+	}
+}
+#nasze-programy{
+	width:100%!important;
+	background-color:@main;/*
+	background-repeat: repeat, repeat; 
+	background-size:100px auto, 100px auto;
+	background-position: 0 100px, -100px 50px!important;
+   */
+ position: relative;
+  overflow: hidden;
+	padding:80px 10px;
+	height:100%; 
+ 	color:@white; 
+		h2{color:@white;}
+	article { z-index:2000;  
+		width:95%; 
+		padding:0px; 
+		height:535px; 
+		position:relative;
+		margin:10px 0 0 0!important;
+		background:@white; 
+		color:@dark;
+		img { 
+			width:100%; 
+			height:auto;
+			margin:0px;
+		}
+		.content {
+			padding:20px; 
+			clear:both; 
+			.justify; 
+			position:relative; 
+			height:240px;
+			h3{ 
+				margin:5px 0 0 0 !important; 
+				color:@dark; 
+				font-size:24px!important; 
+				.bold;
+			}
+			h5{
+				margin:2px 0 0 0 !important; 
+				color:@dark; 
+				font-size:17px!important; 
+				.thin; 
+				line-height:1!important; 
+				position:absolute; 
+				top:60px; 
+				width:90%;
+			}
+			p{  
+				color:@dark; 
+				font-size:15px!important; 
+				.thin; 
+				width:90%; 
+				position:absolute; 
+				top:120px;
+			}
+			.more{ 
+				position:absolute; 
+				bottom:10px; 
+				right:20px; 
+				text-decoration: none;  
+				.bold; 
+				color:@link;
+				span {
+					.fat!important; 
+					color:@dark; 
+					.bold;
+				}
+			}
+		}
+	}
+}
+
+#nasze-programy::before {
+	content: " ";
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: 0%;
+	left:0px;
+	z-index: 0;
+	background-image: url("/images/trojkat_ciemniejszy.png") ;
+	background-size:130px auto;
+	background-repeat: repeat;
+	background-position:0px -130px; 
+	-webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    transform:rotate(0deg); 
+	transform: translate(60px, 0px);
+}
+	#nasze-programy::after{
+	content: " ";
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: 0%;
+	left:0px;
+	z-index:0;
+	background-image: url("/images/trojkat_ciemniejszy.png") ;
+	background-size:130px auto;
+	background-repeat: repeat;
+	background-position:130px 130px;
+	-webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    transform:rotate(180deg); 
+	transform: translate(0px, -60px);		
+}
